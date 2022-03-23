@@ -248,34 +248,6 @@ hr {
     flex-wrap: wrap;
     gap: 200px;
 }
-input{
-    background: #fff none repeat scroll 0 0;
-    border: medium none;
-    margin-bottom: 5px;
-    font-size: 15px;
-    font-weight: 400;
-    line-height: 1.42857143;
-    color: #555;
-    height: 46px;
-    padding: 0 20px;
-    display: block;
-    width: 100%;
-    border-radius: 4px;
-}
-input.color{
-    background: #2B2667;
-    color: #fff;
-}
-
-textarea {
-    width: 100%;
-    border: none;
-    box-shadow: none;
-    background: #fff none repeat scroll 0 0;
-    padding: 5px 15px;
-    height: auto;
-    max-height: 100px;
-}
 .col-50 span{
     font-size: 26px;
     font-family: 'Roboto', sans-serif;
@@ -439,10 +411,12 @@ marquee{
 
     #contacte h1{
     font-size: 26px;
+    margin-bottom: -80px;
 }
     #contacte iframe{
         width: 320px;
         height: 200px;
+        margin-top: -25px;
     }
     .col-50{
         margin: 15px;
