@@ -93,40 +93,46 @@ header nav a:hover {
 }
 /* about */
 
-.about {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    padding: 200px;
-    height: 100vh;
+.section {
+    width: 100%;
 }
-
-article {
-    overflow: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-    flex-wrap: wrap;
+.section .container{
+    width: 80%;
+    display: block;
+    margin: 0px auto;
+    padding: 50px 0px;
 }
-
-.about h1 {
-    font-size: 36px;
+.container .title{
+    width: 100%;
+    text-align: center;
+    margin-top: 80px;
+    margin-bottom: 50px;
+}
+.container .title h1{
+    font-size: 35px;
     font-family: 'Montserrat', sans-serif;
 }
-
-article p {
-    width: 70%;
-    font-size: 24px;
-    font-family: 'Roboto', sans-serif;
+.content{
+    float: left;
+    width: 55%;
 }
-
-article img {
-    width: 30%;
+.image-section{
+    float: right;
+    width: 40%;
+}
+.image-section img{
+    width: 100%;
     height: auto;
+    margin-bottom: 80px;
+    border-radius: 10px;
 }
-
+.content .article p{
+    margin-top: 20px;
+    font-size: 20px;
+    line-height: 1.5;  
+    font-family: 'Roboto', sans-serif;  
+    text-indent: 50px;
+}
 /* produs&service */
 
 .title-text {
@@ -145,6 +151,7 @@ article img {
     font-family: 'Roboto', sans-serif;
 }
 #produs{
+    clear: both;
     background: #efefef;
 }
 #produs, #service {
@@ -206,9 +213,11 @@ hr {
     margin: 15px auto;
     width: 60%;
 }
-
+.all-desct h3 {
+    font-size: 26px;
+}
 .all-desct p {
-    font-size: 14px;
+    font-size: 22px;
 }
 
 .single-all:hover .all-desct {
@@ -371,19 +380,34 @@ marquee{
         font-size: 18px;
     }
     /*about*/
-    .about{
-        padding: 0px;
+    .section .container{
+        width: 80%;
+        display: block;
+        margin: auto;
     }
-    .about h1 {
+    .content{
+        float: none;
+        width: 100%;
+        display: block;
+        margin: auto;
+    }
+    .image-section{
+        float: none;
+        width: 100%;
+        margin-top: 50px;
+    }
+    .image-section img{
+        width: 100%;
+        height: auto;
+        display: block;
+        margin: auto;
+    }
+    .container .title h1{
+        text-align: center;
         font-size: 26px;
     }
-    article p {
-        font-size: 20px;
-        margin: 25px auto;
-    }
-    article img {
-        width: 250px;
-        height: auto;
+    .content .article p{
+        font-size: 16px;
     }
     /* produs&service */
     .title-text h1 {
@@ -398,9 +422,13 @@ marquee{
         flex-basis: 100%;
         margin-bottom: 6px;
     }
+    .all-desct h3 {
+        font-size: 16px;
+    }
     .all-desct p {
         font-size: 12px;
     }
+
     hr {
         margin: 5px auto;
     }
