@@ -22,6 +22,7 @@ header .logo img {
 }
 
 header nav a {
+    display: inline-block;
     padding: 25px;
     text-decoration: none;
     text-transform: uppercase;
@@ -31,9 +32,20 @@ header nav a {
     font-family: 'Montserrat', sans-serif;
 }
 
-header nav a:hover {
-    border-bottom: 4px solid #D37E0F;
+header nav a::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #D37E0F;
+    
+    transition: width .3s; 
+}
+header nav a:hover{
     color: #20B5F3;
+}
+header nav a:hover::after {
+    width: 100%;
 }
 
 #menu-btn {
@@ -335,8 +347,8 @@ marquee{
         padding: 15px;
         width: 100%;
     }
-    header nav a:hover {
-        border-bottom: none;
+    header nav a:hover::after {
+        width: 0;
     }
     #menu-btn {
         display: block;
